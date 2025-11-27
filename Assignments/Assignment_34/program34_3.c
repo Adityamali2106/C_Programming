@@ -1,0 +1,58 @@
+///////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Required header Files
+//
+///////////////////////////////////////////////////////////////////////////////////////////////
+#include<stdio.h>               // For Input Output 
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name : Display
+//  Discription :   It is used display all characters form input character till Z or z 
+//					in other cases return directly 
+//  Input :         Character
+//  Output :        Void
+//  Author :        Aditya Mali
+//  Date :          28/11/2025
+//
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+void Display(char ch)
+{
+	int iCnt = 0;
+
+	if ((ch >= 'a') && (ch <= 'z'))
+	{
+		for (iCnt = ch; iCnt <= 122; iCnt++)
+		{
+			printf("%c\n",iCnt);
+		}
+	}
+	else if (ch >= 'A' && ch <= 'Z')
+	{
+		for (iCnt = ch; iCnt <= 90; iCnt++)
+		{
+			printf("%c\n",iCnt);
+		}
+	}
+}	//End of Display
+
+//  O(N)
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Entory Point Function for the application
+//
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+	char cValue = '\0';
+
+	printf("Enter the character : \t");
+	scanf("%c",&cValue);
+
+	Display(cValue);
+
+    return 0;
+}   // End of main
