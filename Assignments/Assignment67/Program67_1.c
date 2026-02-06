@@ -1,0 +1,62 @@
+///////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Required header Files & typedef for the application
+//
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+#include <stdio.h>
+
+typedef int BOOL;
+typedef unsigned int UINT;
+ 
+#define TRUE 1
+#define FALSE 0
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name 	: CountOne
+//  Discription 	: It is used to count number of ON(1) boit in.
+//  Input 			: Unsigned Integer
+//  Output 			: Count of 1
+//  Author 			: Aditya Vijay Mali
+//  Date 			: 06/02/2026
+//
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+int CountOne(UINT iNo)
+{
+	int BinaryDigit = 0;
+    int iCount = 0;
+
+    while(iNo != 0)
+    {
+        if(iNo & 1)
+        {
+		    iCount++;
+        }
+        iNo = iNo >> 1;
+    }
+
+    return iCount;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Entory Point Function for the application
+//
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+int main(void)
+{
+	UINT iNo = 0;
+	int iRet = 0;
+
+	printf("Enter Number : \n");
+	scanf("%d",&iNo);
+
+	iRet = CountOne(iNo);
+
+	printf("Count of ON bit in %d are %d \n",iNo,iRet);
+
+	return 0;
+}
