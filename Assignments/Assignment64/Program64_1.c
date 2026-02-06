@@ -7,7 +7,7 @@
 #include <stdio.h>
 
 typedef int BOOL;
-typedef unsigned int UNIT;
+typedef unsigned int UINT;
  
 #define TRUE 1
 #define FALSE 0
@@ -23,10 +23,10 @@ typedef unsigned int UNIT;
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
-BOOL ChkBit(UNIT iNo)
+BOOL ChkBit(UINT iNo)
 {
-	UNIT iMask = 0x00004000;
-	UNIT iResult = 0;
+	UINT iMask = 0x00004000;
+	UINT iResult = 0;
 
 	iResult = iNo & iMask;
 
@@ -49,7 +49,7 @@ BOOL ChkBit(UNIT iNo)
 
 int main(void)
 {
-	UNIT iNo = 0;
+	UINT iNo = 0;
 	BOOL bRet = FALSE;
 
 	printf("Enter Number : \n");
@@ -66,4 +66,5 @@ int main(void)
 		printf("15th Bit is OFF\n");
 	}
 	return 0;
+
 }
