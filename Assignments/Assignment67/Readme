@@ -1,6 +1,5 @@
-Bit manipulation is one of those topics that feels like a secret handshake in the programming world.
-To solve these problems effectively, we need to think in binary.
-
-    The core idea is to use a mask—a number specifically designed to target the bits you want to change—and
-then apply a bitwise operator like AND, OR, or XOR. For example, to "off" a bit, we use a bitwise AND with 
-a mask that has a 0 at the target position, while "toggling" requires an XOR operation.
+Bit manipulation problems focuses on developing "low-level" logic by treating integers as sequences 
+of binary digits rather than just decimal values. By utilizing bitwise operators—such as AND (&) 
+for masking, OR (|) for setting bits, XOR (^) for toggling, and Right Shift (>>) for traversal—the
+exercises demonstrate how to efficiently inspect, modify, and count specific bits within a UINT
+variable without relying on standard arithmetic like division or modulo.
