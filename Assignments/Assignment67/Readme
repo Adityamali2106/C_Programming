@@ -1,0 +1,6 @@
+Bit manipulation is one of those topics that feels like a secret handshake in the programming world.
+To solve these problems effectively, we need to think in binary.
+
+    The core idea is to use a mask—a number specifically designed to target the bits you want to change—and
+then apply a bitwise operator like AND, OR, or XOR. For example, to "off" a bit, we use a bitwise AND with 
+a mask that has a 0 at the target position, while "toggling" requires an XOR operation.
