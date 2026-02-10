@@ -1,0 +1,5 @@
+This collection of C programs explores advanced recursive logic by implementing mathematical
+computations and string processing through self-referencing functions. While previous examples
+focused on simple display patterns, these programs demonstrate how recursion can be used to solve 
+complex problems such ascalculating the factorial of a number, finding the summation or product
+of digits,and determining the length of a string without using standard library functions like strlen.
