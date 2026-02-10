@@ -1,0 +1,56 @@
+///////////////////////////////////////////////////////////////////////////////////////////////
+//
+//      Required Hider Files
+//
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Function Name 	: WhiteSpace
+//  Discription 	: It is used to Count the white spaces in a string, Recursively
+//  Input 			: String 
+//  Output 			: Count of white spaces
+//  Author 			: Aditya Vijay Mali
+//  Date 			: 07/02/2026
+//
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+int WhiteSpace(char *str)
+{
+    static int iCnt = 0,iCount = 0; 
+    
+    if(str[iCnt] != '\0')
+    {
+        if (str[iCnt] == ' ')
+        {
+            iCount++;
+        }
+        iCnt++;
+        WhiteSpace(str);
+    }
+
+    return iCount;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+//
+//      Entry point function for the application
+//
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    char arr[20] = {'\0'};
+    int iRet = 0;
+
+    printf("Enter String :\n");
+    scanf("%[^'\n']s",arr);
+
+    iRet = WhiteSpace(arr);
+
+    printf("Total number of white spaces in a string are : %d\n",iRet);
+
+    return 0;
+}
