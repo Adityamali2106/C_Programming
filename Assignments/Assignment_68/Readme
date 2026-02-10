@@ -1,0 +1,5 @@
+This collection of C programs provides a practical introduction to recursion by demonstrating how to replace
+traditional iterative loops with recursive function calls to perform repetitive tasks. Each program utilizes
+static variables to maintain state across recursive depth, covering fundamental patterns such as printing symbols,
+generating numeric sequences in both ascending and descending order, and iterating through character ranges 
+in both uppercase and lowercase.
