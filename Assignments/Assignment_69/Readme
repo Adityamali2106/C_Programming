@@ -1,0 +1,6 @@
+This collection of C programs demonstrates the implementation of dynamic recursion by
+processing user-defined input to determine the number of recursive calls. Unlike static
+implementations, these programs accept an integer from the user to control the depth of
+execution, showcasing how recursion can be used to print symbols, generate numeric 
+sequences in both ascending and descending order, and display a specific count of
+alphabetic characters in both uppercase and lowercase.
